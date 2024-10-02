@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz</title>
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formularz Rejestracyjny</h1>
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="name">Imię i Nazwisko:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Adres e-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Numer telefonu:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Hasło:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" id="terms" name="terms" required>
+                    Akceptuję warunki
+                </label>
+            </div>
+            <div class="form-group">
+                <label>Płeć:</label>
+                <label>
+                    <input type="radio" name="gender" value="male" required>
+                    Mężczyzna
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="female">
+                    Kobieta
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="other">
+                    Inna
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="country">Kraj:</label>
+                <select id="country" name="country">
+                    <option value="poland">Polska</option>
+                    <option value="germany">Niemcy</option>
+                    <option value="france">Francja</option>
+                    <option value="uk">Wielka Brytania</option>
+                    <option value="usa">Stany Zjednoczone</option>
+                </select>
+            </div>
+            <div class="form-group buttons">
+                <button type="reset">Resetuj</button>
+                <button type="submit">Wyślij</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
