@@ -8,46 +8,36 @@
 </head>
 <body>
     <div class="container">
-        <h1>Formularz Rejestracyjny</h1>
+        <h1 class="title">Formularz Rejestracyjny</h1>
         <form id="registrationForm">
-            <div class="form-group">
-                <label for="name">Imię i Nazwisko:</label>
-                <input type="text" id="name" name="name" required>
+            <div class="text-field field">
+                <input class="input-field" type="text" id="name" name="name" placeholder="Imię i Nazwisko" required>
             </div>
-            <div class="form-group">
-                <label for="email">Adres e-mail:</label>
-                <input type="email" id="email" name="email" required>
+            <div class="text-field field">
+                <input class="input-field" type="email" id="email" name="email" placeholder="E-mail" required>
             </div>
-            <div class="form-group">
-                <label for="phone">Numer telefonu:</label>
-                <input type="tel" id="phone" name="phone" required>
+            <div class="text-field field">
+                <input class="input-field" type="tel" id="phone" name="phone" placeholder="Numer telefonu" required>
             </div>
-            <div class="form-group">
-                <label for="password">Hasło:</label>
-                <input type="password" id="password" name="password" required>
+            <div class="text-field field">
+                <input class="input-field" type="password" id="password" name="password" placeholder="Hasło" required>
             </div>
-            <div class="form-group">
-                <label>
-                    <input type="checkbox" id="terms" name="terms" required>
-                    Akceptuję warunki
+            <div class="radio-input">
+                <label class="label">Płeć:</label>
+                <label class="label">
+                    <input type="radio" id="value-1" name="gender" value="male" required>
+                    <p>Mężczyzna</p>
+                </label>
+                <label class="label">
+                    <input type="radio" id="value-2" name="gender" value="female">
+                    <p>Kobieta</p>
+                </label>
+                <label class="label">
+                    <input type="radio" id="value-3" name="gender" value="other">
+                    <p>Inna</p>
                 </label>
             </div>
-            <div class="form-group">
-                <label>Płeć:</label>
-                <label>
-                    <input type="radio" name="gender" value="male" required>
-                    Mężczyzna
-                </label>
-                <label>
-                    <input type="radio" name="gender" value="female">
-                    Kobieta
-                </label>
-                <label>
-                    <input type="radio" name="gender" value="other">
-                    Inna
-                </label>
-            </div>
-            <div class="form-group">
+            <div class="field options">
                 <label for="country">Kraj:</label>
                 <select id="country" name="country">
                     <option value="poland">Polska</option>
@@ -57,9 +47,15 @@
                     <option value="usa">Stany Zjednoczone</option>
                 </select>
             </div>
-            <div class="form-group buttons">
-                <button type="reset">Resetuj</button>
-                <button type="submit">Wyślij</button>
+            <div class="check-field field">
+                <label>
+                    <input type="checkbox" id="terms" name="terms" required>
+                    Akceptuję warunki
+                </label>
+            </div>
+            <div class="field buttons">
+                <button class="btn" type="reset">Resetuj</button>
+                <button class="btn" type="submit">Wyślij</button>
             </div>
         </form>
     </div>
